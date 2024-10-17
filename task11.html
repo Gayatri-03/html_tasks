@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title> creating a table using hsl properties</title>
+        <style>
+            table{
+                width: 50px;
+                margin:30px 40px 20px 25px;
+                border-style: dashed;
+                border-color: darkgreen;
+            }
+            td{
+                border: 2px solid hsl(100, 20%, 30%);
+            }
+            tr:nth-child(even){
+            
+                background-color: hsl(150, 80%,50%);
+            }
+            tr:nth-child(odd){
+                
+                background-color: hsl(200,90%, 30%);
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <table border="3">
+            <tr>
+                <td>row1 col1</td>
+                <td>row1 col2</td>
+            </tr>
+            <tr>
+                <td>row2 col1</td>
+                <td>row2 col2</td>
+            </tr>
+        </table>
+    </body>
+</html>
